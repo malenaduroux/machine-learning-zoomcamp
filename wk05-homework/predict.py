@@ -12,7 +12,7 @@ client = {
 }
 
 
-with open('pipeline_v2.bin', 'rb') as f_in:
+with open('wk05-homework/pipeline_v1.bin', 'rb') as f_in:
     pipeline = pickle.load(f_in)
 
 code = FastAPI(title="lead-scoring-prediction")
