@@ -1,0 +1,9 @@
+docker build -t churn-prediction .
+
+docker run -it --rm -p 9696:9696 churn-prediction
+^ run container in interactive mode
+--rm means remove from system after ^C
+-p is mapping to port 9696 on computer
+churn-prediction is the image we want to run
+
+then fly.io, google cloud run, AWS app runner, etc. could be used as a web service for deploying application
